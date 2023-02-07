@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Roboto","Arial",sans-serif;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0 16px;
+}
+
+.left-section{
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.left-section img{
+    width:46%;
+    padding-left: 16px;
+}
+
+.left-section img{
+    height: 50px;
+    width: 160px;
+}
+
+.mid-section{
+    display: flex;
+    align-items: center;
+    margin-left:-9%;
+} 
+
+.mid-section form{
+    display: flex;
+    height: 40px;
+    width: 628px;
+}
+
+.mid-section input{
+    width: 100%;
+    border-radius: 15px 0 0 15px;
+    padding: 12px;
+    font-size: 1.6rem;
+    border: 1px solid #d3D3D3;
+    border-right: none; 
+}
+
+.mid-section button{
+    width:60px;
+    border: 1px solid #d3d3d3;
+    border-radius: 0px 15px 15px 0px;
+    padding-top: 4px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+.mid-section .mic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.mid-section button:hover{
+    border-color: #c6c6c6;
+    background-color: #f0f0f0;
+}
+
+
+.right-section a{
+    padding-right: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.content-area{
+    height: calc(100 - 56px);
+    display: flex;
+    background-color: #f9f9f9;
+}
+
+aside{
+    height: 100%;
+    width: 280px;
+    background-color: white;
+    overflow-y: auto;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column; /*let the linkgs down each other not beside each other*/
+    margin: 15px 0;/*15 top and bottum 0left right*/
+    padding-right: 15px;
+}
+
+.nav-link{
+    display:flex;
+    align-items: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: #000;;
+}
+
+.nav-link:hover{
+    background-color: rgba(0, 0, 0, 0.05)
+}
+
+.nav-link span{
+    margin-left: 24px;
+    font-size: 1.4rem;
+    line-height: 2em;
+    font-weight: 400;
+    color: #030303;
+}
+
+.active{
+    background-color: #e5e5e5;
+}
+
+#active-span{
+    font-weight: 500;
+}
+
+hr{
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+    margin:10px 0;
+}
+
+nav p{
+    font-size: 1.4rem;
+    color: #606060;
+    font-weight: 500;
+    padding: 8px 16px;
+    text-transform: uppercase;
+}
+
+.channel-img{
+    height: 24px;
+    width:24PX;
+    border-radius: 50%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    padding: 35px 15px;
+    border-top: 1px solid #ddd;
+    overflow-y: auto;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    Gap: 25px;
+}
+
+
+.videos-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.video{
+    width:  330px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.thumbnail{
+    width: 100%;
+    height: 187px;
+    margin-bottom: 12px;
+}
+
+.thumbnail img{
+    height: 100%;
+    width:100%;
+}
+
+.video-details{
+    display: flex;
+}
+
+.creator-img img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+}
+
+.title a{
+    text-decoration: none;
+}
+
+.video-title{
+    color: rgb(3, 3, 3);
+    font-size: 1.6rem;
+    max-width: 278px; /*so the next won't go out from the video title*/
+    font-weight: 500;
+    line-height: 2.2rem;
+    margin-bottom: 4px;
+    overflow: hidden; /*to put 3 point on the long phraze*/
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.video-creator, .title span {
+    color: rgb(96, 96, 96);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+
+.video-creator:hover{
+    color:black;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

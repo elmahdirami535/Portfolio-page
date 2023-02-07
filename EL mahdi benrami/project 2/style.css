@@ -1,0 +1,60 @@
+.shanab{
+    position: absolute;
+    left: 70px;
+    width: 180px;
+    height: 180px;
+    color: #000;
+    border-radius: 50%;
+    box-shadow: 150px 240px 0 0 currentColor,
+    300px 240px 0 0 currentColor;
+}
+
+.shanab::before{
+    content:"";
+    position: absolute;
+    width: 210px;
+    height: 120px;
+    border-bottom: 180px solid currentColor;  
+    border-radius: 0 0 0 100%;
+    left:30px;
+    top: 120px;
+    transform: rotate(-40deg);
+    transform-origin: right 210px;
+}
+
+.shanab::after{
+    content:"";
+    position: absolute;
+    width: 210px;
+    height: 120px;
+    border-bottom: 180px solid currentColor;  
+    border-radius: 0 0 100% 0;
+    left:390px;
+    top: 120px;
+    transform: rotate(40deg);
+    transform-origin: left 210px;
+}
+
+.shanab::before{
+    animation: danceleft 1s ease-in-out infinite;
+}
+
+.shanab::after{
+    animation: danceright 1s ease-in-out infinite;
+}
+
+@keyframes danceleft{
+    0%{transform: rotate(-50deg);}
+
+    50%{transform: rotate(-30deg);}
+
+    100%{transform:rotate(-50deg)}
+}
+
+@keyframes danceright{
+    0%{transform: rotate(50deg);}
+
+    50%{transform: rotate(30deg);}
+
+    100%{transform:rotate(50deg)}
+}
